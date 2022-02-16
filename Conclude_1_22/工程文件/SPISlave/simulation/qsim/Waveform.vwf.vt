@@ -1,0 +1,214 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "01/28/2022 13:17:10"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          SPISlave
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module SPISlave_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CS_i;
+reg EN_MISO_i;
+reg EN_MOSI_i;
+reg [7:0] MISO_DT_i;
+reg MOSI_i;
+reg SPI_Clk_i;
+reg [1:0] SPI_MODE;
+reg rst_i;
+// wires                                               
+wire EN_MISO_o;
+wire EN_MOSI_ro;
+wire [2:0] MISO_cnt_r;
+wire MISO_o;
+wire MISO_ro;
+wire [7:0] MOSI_DT_ro;
+
+// assign statements (if any)                          
+SPISlave i1 (
+// port map - connection between master ports and signals/registers   
+	.CS_i(CS_i),
+	.EN_MISO_i(EN_MISO_i),
+	.EN_MISO_o(EN_MISO_o),
+	.EN_MOSI_i(EN_MOSI_i),
+	.EN_MOSI_ro(EN_MOSI_ro),
+	.MISO_DT_i(MISO_DT_i),
+	.MISO_cnt_r(MISO_cnt_r),
+	.MISO_o(MISO_o),
+	.MISO_ro(MISO_ro),
+	.MOSI_DT_ro(MOSI_DT_ro),
+	.MOSI_i(MOSI_i),
+	.SPI_Clk_i(SPI_Clk_i),
+	.SPI_MODE(SPI_MODE),
+	.rst_i(rst_i)
+);
+initial 
+begin 
+#1200000 $finish;
+end 
+// SPI_MODE[ 1 ]
+initial
+begin
+	SPI_MODE[1] = 1'b1;
+end 
+// SPI_MODE[ 0 ]
+initial
+begin
+	SPI_MODE[0] = 1'b0;
+end 
+
+// CS_i
+initial
+begin
+	CS_i = 1'b1;
+end 
+
+// rst_i
+initial
+begin
+	rst_i = 1'b0;
+	rst_i = #10000 1'b1;
+	rst_i = #20000 1'b0;
+end 
+
+// SPI_Clk_i
+initial
+begin
+	SPI_Clk_i = 1'b1;
+	SPI_Clk_i = #80000 1'b0;
+	SPI_Clk_i = #20000 1'b1;
+	# 20000;
+	repeat(27)
+	begin
+		SPI_Clk_i = 1'b0;
+		SPI_Clk_i = #20000 1'b1;
+		# 20000;
+	end
+end 
+
+// EN_MOSI_i
+initial
+begin
+	EN_MOSI_i = 1'b0;
+	EN_MOSI_i = #40000 1'b1;
+	EN_MOSI_i = #959000 1'b0;
+end 
+
+// MOSI_i
+initial
+begin
+	MOSI_i = 1'b0;
+	MOSI_i = #50000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #40000 1'b1;
+	MOSI_i = #40000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #40000 1'b1;
+	MOSI_i = #40000 1'b0;
+	MOSI_i = #40000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #40000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #40000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #20000 1'b0;
+	MOSI_i = #20000 1'b1;
+	MOSI_i = #30000 1'b0;
+	MOSI_i = #10000 1'b1;
+	MOSI_i = #40000 1'b0;
+end 
+
+// EN_MISO_i
+initial
+begin
+	EN_MISO_i = 1'b0;
+	EN_MISO_i = #40000 1'b1;
+end 
+// MISO_DT_i[ 7 ]
+initial
+begin
+	MISO_DT_i[7] = 1'b1;
+	MISO_DT_i[7] = #240000 1'b0;
+	MISO_DT_i[7] = #350000 1'b1;
+end 
+// MISO_DT_i[ 6 ]
+initial
+begin
+	MISO_DT_i[6] = 1'b1;
+	MISO_DT_i[6] = #240000 1'b0;
+	MISO_DT_i[6] = #350000 1'b1;
+end 
+// MISO_DT_i[ 5 ]
+initial
+begin
+	MISO_DT_i[5] = 1'b0;
+end 
+// MISO_DT_i[ 4 ]
+initial
+begin
+	MISO_DT_i[4] = 1'b1;
+end 
+// MISO_DT_i[ 3 ]
+initial
+begin
+	MISO_DT_i[3] = 1'b0;
+end 
+// MISO_DT_i[ 2 ]
+initial
+begin
+	MISO_DT_i[2] = 1'b1;
+end 
+// MISO_DT_i[ 1 ]
+initial
+begin
+	MISO_DT_i[1] = 1'b1;
+end 
+// MISO_DT_i[ 0 ]
+initial
+begin
+	MISO_DT_i[0] = 1'b1;
+end 
+endmodule
+

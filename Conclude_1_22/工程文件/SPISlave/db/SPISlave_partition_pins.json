@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "EN_MOSI_ro",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_DT_ro[7]",
+					"strict" : false
+				},
+				{
+					"name" : "EN_MISO_o",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_o",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_cnt_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_cnt_r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_cnt_r[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_ro",
+					"strict" : false
+				},
+				{
+					"name" : "rst_i",
+					"strict" : false
+				},
+				{
+					"name" : "EN_MOSI_i",
+					"strict" : false
+				},
+				{
+					"name" : "CS_i",
+					"strict" : false
+				},
+				{
+					"name" : "EN_MISO_i",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_MODE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_Clk_i",
+					"strict" : false
+				},
+				{
+					"name" : "SPI_MODE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MOSI_i",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[5]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[7]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[4]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[6]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MISO_DT_i[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
