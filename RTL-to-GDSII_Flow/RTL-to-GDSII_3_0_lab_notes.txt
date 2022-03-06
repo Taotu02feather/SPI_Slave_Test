@@ -1,0 +1,8 @@
+Lab databases are provided in compressed formats. 
+
+Use the following commands in UNIX/Linux to uncompress them:
+gunzip <Lab>.tar.gz
+
+uncompress <Lab>.tar.Z
+
+tar xvf <Lab>.tar

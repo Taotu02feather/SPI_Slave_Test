@@ -1,0 +1,84 @@
+I.      Course Title:
+
+        1.0 Cadence RTL to GDSII - Course Database
+
+II.     Course Developer:
+
+        Krishna Atreya atreya@cadence.com
+
+III.    Minimum Hardware Requirements:
+	Make sure you have installed all the software needed for these labs. 
+	Look up the hardware (HW) requirements for the software from 
+	http://downloads.cadence.com 
+
+	For some software, you can also run checkSysConf <RelName>.
+	To see a list of software that allows checkSysConf, use 
+	checkSysConf -r
+
+	We do not require parallel processing for these labs, but a parallel processing step 
+	might require additional setup and HW.
+
+	Lab requirement - retain at least 500 MB for the course 
+	duration for saving of intermediate files and designs.
+
+IV.     Software Products Required:
+
+	An X-Window environment is required to run the software.
+   
+	This course uses the following software:
+		Xcelium Simulator (XCELIUM1704)
+		Integrated Metric Center (IMC64,XCELIUM1704)
+		Genus Synthesis Solution (GENUS162)
+		Encounter Test or Modus (ET162)
+		Conformal Logic Equivalence Checker (CONFRML162)
+		Innovus Implementation System (INNOVUS162)
+		Tempus Timing Signoff Solution (SSV152 or SSV162)
+		Voltus Power Signoff Solution (SSV152 or SSV162)
+		Quantus RC Extraction (SSV152 or SSV162)
+
+        Software reference Manuals are available online at http://support.cadence.com.
+
+V.      Loading and Set Up of Database
+	Once you have the database, make sure that the files inside are complete and not corrupt.
+	If it is a tar,gz, you will have to:
+	tar zxvf <filename.tar.gz>
+	OR
+	gunzip <filename.tar.gz>
+	tar xvf <filename.tar>
+
+	If it is a tar.Z, you have to:
+	uncompress <filename.tar.Z>
+	and then,
+	tar xvf <filename.tar>
+
+	If it is a zip file, use:
+	unzip <filename.zip>
+
+VI.     Testing the course installation:
+
+        Run the test script and verify the results.
+
+	Typically the testscript checks all the files.
+	Then, the cadence software and licenses are loaded and automatically closed. 
+  	   
+	This all takes 10-15 minutes. If it completes successfully, 
+	then your database and software are correctly loaded.
+	
+	If you are not in a Cadence classroom, make sure you installed the software, 
+	set all the paths within .class_setup file correctly, and have already installed the proper licenses.
+
+	Then, test the database installation, by entering:
+		ln -s .test/testscript.cmd .testscript # Optional step
+		source .testscript
+		If the script passes through without any error then you can be confident that:
+		 there are no errors with the tool and you have setup the database correctly.
+
+		If not:
+			If you still have a problem running the lab, 
+			please look into what the error is in the .test/testReport file and try to fix it. 
+			You may not have installed the required software in your path.
+			You may not have a proper license.
+		Check and fix these issues.
+		Otherwise please contact Cadence Design Systems Inc.
+
+
